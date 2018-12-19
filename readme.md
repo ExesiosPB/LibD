@@ -16,6 +16,6 @@ A RESTful API where requests with parameters can be passed to the library, it re
 - Then install python modules `pip install -r requirements.txt`
 - Set FLASK_APP env variable `export FLASK_APP=libd.py`
   - For windows `set FLASK_APP=libd.py`
-- Then run `flask run`
+- Then run `python -m flask run`
 
 Runs the application at `http://localhost:5000/`

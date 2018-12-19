@@ -1,1 +1,2 @@
-FLASK_APP=libd.py
+FLASK_APP=libd.py 
+FLASK_DEBUG=1
