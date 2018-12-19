@@ -18,3 +18,6 @@ Instagram
 Flikr
 - Key `5c847904821a3d3a8fa77bd44bf59378`
 - Secret Key `fe691585e908cf7b`
+
+News API
+- Key `0be597d2c65a4431b613c6ddf48777a1`
