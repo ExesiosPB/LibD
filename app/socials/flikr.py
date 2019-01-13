@@ -31,10 +31,10 @@ def getAllPhotos(place):
   return photosJSON
 
 def downloadImage(url, fname):
-  if not os.path.isdir('./images/'):
-    os.makedirs('./images/')
+  if not os.path.isdir('./flikrimages/'):
+    os.makedirs('./flikrimages/')
 
-  fname = './images/{}'.format(fname)
+  fname = './flikrimages/{}'.format(fname)
   r = requests.get(url, stream=True)
   with open(fname, 'wb') as f:
     for chunk in r.iter_content(chunk_size=1024):
@@ -42,5 +42,5 @@ def downloadImage(url, fname):
     return True
   return False
 
-def getFlickr():
-  return getAllPhotos('stoke')
+def getFlickr(search_param):
+  return getAllPhotos(search_param)
