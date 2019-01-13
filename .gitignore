@@ -1,2 +1,8 @@
+# Byte-Compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 venv/
 images/
+flikrimages/
