@@ -22,7 +22,7 @@ def getAllPhotos(place):
     # https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_[mstzb].jpg
     url = 'https://farm{}.staticflickr.com/{}/{}_{}_m.jpg'.format(fid, sid, pid, sec)
     fname = '{}.jpg'.format(pid)
-    downloadImage(url, fname)
+    # downloadImage(url, fname)
 
     # Now append photo url to main JSON
     photosJSON['photos']['photo'][count]['imageurl'] = url

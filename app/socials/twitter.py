@@ -61,7 +61,7 @@ def getTweets(searchParam):
       })
 
     # Checker to make sure we arent in infinite loop
-    if (count > 1000):
+    if (count > 500):
       doneSearch = True
 
   finalJSON = {

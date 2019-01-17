@@ -32,3 +32,5 @@ Buffer - https://blog.bufferapp.com/
 
 If in doubt there is always this web search API
 - https://www.programmableweb.com/api/contextual-web-search
+
+https://any-api.com/

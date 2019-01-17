@@ -7,11 +7,23 @@ from app.socials.instagram import getInstagram
 from app.news.news import getNews
 import app.socials.foursquare as foursquare
 
+import requests
+
 @app.route('/')
 @app.route('/index')
 def index():
   return 'Home'
 
+# URL: /gov/Crime
+# Gets goverment information based on search_param
+@app.route('/gov/<string:search_param>')
+def gov(search_param):
+  url = "https://data.gov.uk/api/3/action/package_search?q=title:{}".format(search_param)
+  r = requests.get(url)
+  res = r.json()
+
+  return res
+  
 # URL: /news/SOME_SEARCH_PARAM
 # Returns JSON off all news articles about the entered seach_param
 #
