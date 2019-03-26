@@ -1,14 +1,20 @@
 import flickrapi
 import os
 import requests
+import datetime
+today = datetime.date.today()
+datemin = today - datetime.timedelta(days = 1)
+datemax = today - datetime.timedelta(days = 40)
 
 apiKey = '5c847904821a3d3a8fa77bd44bf59378'
 apiSecret = 'fe691585e908cf7b'
 
+sort = 'date-taken-asc'
+
 flickr = flickrapi.FlickrAPI(apiKey, apiSecret, format='parsed-json')
 
 def getAllPhotos(place):
-  photosJSON = flickr.photos.search(tags=place)
+  photosJSON = flickr.photos.search(max_upload_date=datemax, sort=sort, min_upload_date=datemin, tags=place)
   photos = photosJSON['photos']['photo']
 
   count = 0
