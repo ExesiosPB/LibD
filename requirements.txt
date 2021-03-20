@@ -13,7 +13,7 @@ idna==2.8
 imagesize==1.1.0
 instagram-scraper==1.5.41
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.0
 newsapi-python==0.2.3
 oauthlib==2.1.0
